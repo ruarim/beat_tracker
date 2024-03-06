@@ -17,6 +17,6 @@ The system is made up of three distinct phases.
 
 ![dynamic_programming_visualisation](https://github.com/ruarim/beat_tracker/assets/48099261/f91ba64e-e6b1-4a13-9117-f9ab27885aeb)
 
-## The system was evaluated using a mean f-measure score across a ~700 Ballroom dance music recordings.
+## The system was evaluated using a mean f-measure score across ~700 Ballroom dance music recordings.
 ![f_measure_with_trim_resample_tps](https://github.com/ruarim/beat_tracker/assets/48099261/e26aa6b9-cd10-4f74-ad37-4a85686557f5)
 
