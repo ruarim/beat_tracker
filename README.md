@@ -8,7 +8,7 @@ The system is made up of three distinct phases.
 ![full_ose_Albums-Commitments-10](https://github.com/ruarim/beat_tracker/assets/48099261/1175b867-fddd-496a-98ca-8bc21c24fed4)
 
 - This OSE is then used to estimate a tempo period for the audio via a perceptually weighted auto-correlation.
-- 
+
 ![5secs_weighted_ac_Albums-Commitments-10](https://github.com/ruarim/beat_tracker/assets/48099261/19ee7057-ced0-4e12-b1ea-a32f45d8c5db)
 
 - Finally, a dynamic programming algorithm is used to identify the most likely sequence of beats based on the OSE and estimated tempo period.
