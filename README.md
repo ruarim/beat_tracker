@@ -20,4 +20,4 @@ The system is made up of three distinct phases.
 ## The system was evaluated using a mean f-measure score across ~700 Ballroom dance music recordings.
 ![f_measure_with_trim_resample_tps](https://github.com/ruarim/beat_tracker/assets/48099261/e26aa6b9-cd10-4f74-ad37-4a85686557f5)
 
-[1] D. P. W. Ellis, ‘Beat Tracking by Dynamic Programming’, Journal of New Music Research, vol. 36, no. 1, pp. 51–60, Mar. 2007, doi: 10.1080/09298210701653344.
+[1] D. P. W. Ellis, ‘Beat Tracking by Dynamic Programming’, Journal of New Music Research, vol. 36, no. 1, pp. 51–60, Mar. 2007.
