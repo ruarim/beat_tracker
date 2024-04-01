@@ -1,17 +1,7 @@
-# Global imports 
 import numpy as np
 import librosa
 from matplotlib import pyplot as plt
-
-from scipy.signal import butter, filtfilt, lfilter
-
-# butterworth highpass filter
-def high_pass_filter(y, sr, cutoff=0.4, order=1):
-    nyquist = 0.5 * sr
-    normal_cutoff = cutoff / nyquist
-    b, a = butter(order, normal_cutoff, btype='high', analog=False)
-    y_filtered = filtfilt(b, a, y, axis=0)
-    return y_filtered
+from scipy.signal import lfilter
 
 def mel_db(sr, stft, n_fft, hop_length, n_mels=40):
     abs_stft = abs(stft)
