@@ -52,14 +52,14 @@ def onset_strength_envelope(y, sr, window_sec=0.032, hop_sec=0.004, show=False):
     return onset_strength_norm
     
 # Apply perceptual weighting based on tempo tapping data
-def perceptual_weighting(t, t0=0.5, sigma_t=0.9): # t0 (bpm) and sigma_t (octaves) values from ellis 2007  
+def perceptual_weighting(tau, tau_0=0.5, sigma_tau=0.9): # tau_0 (bpm) and sigma_tau (octaves) values from ellis 2007  
     # avoid div by zero error 
     epsilon = 1e-10
-    t = np.maximum(t, epsilon)
+    tau = np.maximum(tau, epsilon)
     
     # create gaussian window based on ellis 2007
-    log_2_t_over_t0 = np.log2(t / t0)
-    W_t = np.exp(-0.5 * (log_2_t_over_t0 / sigma_t) ** 2)
+    log_2_tau_over_tau_0 = np.log2(tau / tau_0)
+    W_t = np.exp(-0.5 * (log_2_tau_over_tau_0 / sigma_tau) ** 2)
     
     return W_t
 
